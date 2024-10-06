@@ -52,4 +52,3 @@ def test_full_filling_and_sending_form():
     browser.element("//table//td[text()='Address']/../td[2]").should(have.text("проспект Королева, 34/1"))
     browser.element("//table//td[text()='State and City']/../td[2]").should(have.text("Haryana Karnal"))
 
-    pass
