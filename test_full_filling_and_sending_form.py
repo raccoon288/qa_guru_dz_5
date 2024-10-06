@@ -4,6 +4,8 @@ import os
 
 def test_full_filling_and_sending_form():
     browser.open("/automation-practice-form")
+    browser.driver.execute_script("$('#fixedban').remove()")
+    browser.driver.execute_script("$('footer').remove()")
     browser.element("#firstName").should(be.blank)
     browser.element("#firstName").type("Василий")
     browser.element("#lastName").should(be.blank)
